@@ -1,10 +1,10 @@
 from setuptools import setup
 setup(
-    name='skyhawkcli',
+    name='skyhawk',
     version='1.0',
-    packages=['skyhawkcli'],
+    packages=['skyhawk'],
     entry_points={
         'console_scripts': [
-            'skyhawkcli = skyhawkcli.__main__:main'
+            'skyhawk = skyhawk.__main__:main'
         ]
     })
