@@ -1,9 +1,9 @@
 import click
-from skyhawk.service import capture
+from skyhawk.services import capture
 
 class Context:
     def __init__(self):
-        self.capture = capture.Capture()
+        pass
 
 @click.group()
 @click.pass_context
@@ -12,17 +12,18 @@ def cli(ctx):
     ctx.obj = Context()
 
 
-
 @cli.command()
 @click.pass_context
 def color(ctx):
     '''Captures colored face images'''
-    result = ctx.obj.capture.color()
-
-
+    result = capture.Capture.color()
+    return result
+    # pass
 
 @cli.command()
 @click.pass_context
-def bw(ctx):
+def black(ctx):
     '''Captures black and white face images'''
-    result = ctx.obj.capture.bw()
+    result = capture.Capture.black()
+    return result
+    # pass
