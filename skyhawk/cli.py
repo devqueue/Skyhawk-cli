@@ -21,5 +21,5 @@ class ComplexCLI(click.MultiCommand):
 
 @click.command(cls=ComplexCLI)
 def cli():
-    """Welcome to EVE! Auto-attandance cli utility tool!"""
+    """Welcome to EVE! Auto-attandance cli tool!"""
     pass
