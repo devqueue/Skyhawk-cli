@@ -1,3 +1,4 @@
+#!venv/bin/python3.8
 import cv2
 import os
 import numpy as np

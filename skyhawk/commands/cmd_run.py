@@ -1,3 +1,4 @@
+#!venv/bin/python3.8
 import click
 from skyhawk.services import detector
 

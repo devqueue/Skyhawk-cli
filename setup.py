@@ -1,3 +1,4 @@
+#!venv/bin/python3.8
 from setuptools import setup, find_packages
 
 def read_requirements():
