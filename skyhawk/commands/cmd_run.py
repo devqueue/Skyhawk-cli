@@ -1,5 +1,5 @@
 import click
-from skyhawk.services import main
+from skyhawk.services import detector
 
 
 class Context:
@@ -10,7 +10,7 @@ class Context:
 @click.command()
 def cli():
     '''Start running skyhawk for face recognition'''
-    result = main.run()
+    result = detector.run()
     return result
 
 
