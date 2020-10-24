@@ -14,7 +14,6 @@ setup(
     install_requires=read_requirements(),
     entry_points={
         'console_scripts': [
-            'skyhawk = skyhawk.cli:cli',
-            'skyhawk = skyhawk.__main__:main'
+            'skyhawk = skyhawk.cli:cli'
         ]
     })

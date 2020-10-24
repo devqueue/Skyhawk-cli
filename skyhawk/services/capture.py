@@ -72,7 +72,7 @@ class Capture:
             result_str = ''.join(random.choice(letters) for i in range(length))
             return result_str
         face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades+'haarcascade_frontalface_default.xml')
-        name = input("Enter your name: ")
+        name = input("Name: ")
         pics = int(input("No. of images: "))
         count = 0
         cap = cv2.VideoCapture(0)
