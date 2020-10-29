@@ -23,6 +23,7 @@ wheels/
 pip-wheel-metadata/
 share/python-wheels/
 .vscode/
+skyhawk/misc
 *.egg-info/
 .installed.cfg
 *.egg
