@@ -28,7 +28,9 @@ skyhawk/misc
 .installed.cfg
 *.egg
 MANIFEST
-
+logo.txt
+face logo.txt
+Lulz
 # PyInstaller
 #  Usually these files are written by a python script from a template
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
