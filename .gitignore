@@ -6,6 +6,7 @@ __pycache__/
 # C extensions
 *.so
 
+
 # Distribution / packaging
 .Python
 build/
@@ -23,10 +24,14 @@ wheels/
 pip-wheel-metadata/
 share/python-wheels/
 .vscode/
+skyhawk/misc
 *.egg-info/
 .installed.cfg
 *.egg
 MANIFEST
+logo.txt
+face logo.txt
+Lulz
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
