@@ -42,6 +42,7 @@ class Capture:
                 count += 1
                 face = cv2.resize(face_ext(frame), (200, 200))
                 #face = cv2.cvtColor(face, cv2.COLOR_BGR2GRAY)
+                #path = os.path.abspath(os.path.join(os.path.dirname(__file__), "services/captured/"))
                 path = os.path.join(os.getcwd(),'skyhawk/services/captured/', f'{name}')
                 file_path = os.path.join(path, str(count) + get_random_string(suffix) + '.jpg')
                 print(file_path)
