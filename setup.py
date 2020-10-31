@@ -9,10 +9,10 @@ def read_requirements():
 
 
 classifiers = [
-    'Topic:: Security',
+    'Topic :: Security',
     'Development Status :: 4 - Beta',
-    'Environment:: Console',
-    'License :: Mozilla Public License 2.0',
+    'Environment :: Console',
+    'License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)',
     'Intended Audience :: End Users/Desktop',
     'Operating System :: OS Independent',
     'Programming Language :: Python :: 3.7'
