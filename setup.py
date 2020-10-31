@@ -20,9 +20,11 @@ classifiers = [
 
 with open('README.md') as rm:
     RM_desc = rm.read()
+    RM_desc = str(RM_desc)
 
 with open('ChangeLog') as cl:
     CL_desc = cl.read
+    CL_desc = str(CL_desc)
 
 
 setup(
