@@ -29,7 +29,7 @@ with open('ChangeLog') as cl:
 
 setup(
     name='skyhawk',
-    version='0.0.1',
+    version='0.0.2',
     description='Skyhawk is a CLI tool that can run on any device with a camera to recognize faces. It built with open-cv & python',
     Long_description=RM_desc + '\n\n' + CL_desc,
     long_description_content_type="text/markdown",
