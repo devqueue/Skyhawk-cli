@@ -5,15 +5,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+
+## [0.0.3] - 2020-09-01 [BETA]
 ### Added
+-Better way of storing user data
+-Skyhawk init command
 
 ### Changed
+-Changelog moved from txt to MarkDown
 
 ### Removed
+-Cascades removed 
 
 
 ## [0.0.2] - 2020-08-31 [BETA]
-
 ### Changed
 -Fixed pip install error 
 
