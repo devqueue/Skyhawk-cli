@@ -6,8 +6,7 @@ from datetime import datetime
 
 
 def run():
-    face_cascade = cv2.CascadeClassifier(
-        'skyhawk/services/Cascades/haarcascade_frontalface_default.xml')
+    face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades+'haarcascade_frontalface_default.xml')
     recognizer = cv2.face.LBPHFaceRecognizer_create()
 
     recognizer.read("skyhawk/services/recognizer/face-trainner.yml")
