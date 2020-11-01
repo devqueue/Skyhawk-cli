@@ -8,13 +8,13 @@ class Viewer:
 
 
     def view():
-        with open('skyhawk/services/Attendance.csv', 'r') as inf:
+        with open('skyhawk/bin/Attendance.csv', 'r') as inf:
             table = from_csv(inf)
             print(table)
 
     def users():
-        path = "skyhawk/services/captured"
-        dir_content = os.listdir('skyhawk/services/captured')
+        path = "skyhawk/facedata"
+        dir_content = os.listdir('skyhawk/facedata')
         users = []
         for filename in dir_content:
             if filename.endswith(".py"):

@@ -7,13 +7,17 @@ class Clear:
     
 
     def attandance():
-        with open('skyhawk/services/Attendance.csv', 'w') as file:
-            HEADER = "Name, Date, Time, Day "
-            file.write(HEADER)
+        try:
+            with open('skyhawk/bin/Attendance.csv', 'w') as file:
+                HEADER = "Name, Date, Time, Day "
+                file.write(HEADER)
+        except FileNotFoundError as e:
+            print("Error: %s : %s" % (path, e.strerror))
+            print("Make sure to run 'skyhawk init' before clearing a file")
 
     
     def images(name):
-        IMAGE_DIR = r"skyhawk/services/captured/"
+        IMAGE_DIR = r"skyhawk/facedata"
         path = IMAGE_DIR+name
 
         try:

@@ -43,17 +43,16 @@ class Capture:
                 face = cv2.resize(face_ext(frame), (200, 200))
                 #face = cv2.cvtColor(face, cv2.COLOR_BGR2GRAY)
                 #path = os.path.abspath(os.path.join(os.path.dirname(__file__), "services/captured/"))
-                path = os.path.join(os.getcwd(),'skyhawk/services/captured/', f'{name}')
+                path = os.path.join(os.getcwd(),'skyhawk/facedata/', f'{name}')
                 file_path = os.path.join(path, str(count) + get_random_string(suffix) + '.jpg')
                 print(file_path)
                 if os.path.exists(path):
                     cv2.imwrite(file_path, face)
 
                 elif not os.path.exists(path):
-                    os.mkdir(path)
+                    os.makedirs(path)
                     cv2.imwrite(file_path, face)
-                cv2.putText(face, str(count), (50, 50),
-                            cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (0, 255, 0), 2)
+                cv2.putText(face, str(count), (50, 50),cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (0, 255, 0), 2)
                 cv2.imshow('Data Collector', face)
 
             else:
@@ -65,6 +64,8 @@ class Capture:
         cap.release()
         cv2.destroyAllWindows()
         print("Dataset Collection Completed")
+        
+
 
     def black():
         def get_random_string(length):
@@ -102,13 +103,13 @@ class Capture:
                 count += 1
                 face = cv2.resize(face_ext(frame), (200, 200))
                 face = cv2.cvtColor(face, cv2.COLOR_BGR2GRAY)
-                path = os.path.join(os.getcwd(),'skyhawk/services/captured/', f'{name}')
+                path = os.path.join(os.getcwd(),'skyhawk/facedata', f'{name}')
                 file_path = os.path.join(path, str(count) + get_random_string(suffix) + '.jpg')
                 print(file_path)
                 if os.path.exists(path):
                     cv2.imwrite(file_path, face)
                 elif not os.path.exists(path):
-                    os.mkdir(path)
+                    os.makedirs(path)
                     cv2.imwrite(file_path, face)
                 cv2.putText(face, str(count), (50, 50),cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (0, 255, 0), 2)
                 cv2.imshow('Data Collector', face)
