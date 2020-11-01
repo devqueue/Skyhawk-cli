@@ -22,14 +22,14 @@ with open('README.md') as rm:
     RM_desc = rm.read()
     RM_desc = str(RM_desc)
 
-with open('ChangeLog') as cl:
+with open('ChangeLog.md') as cl:
     CL_desc = cl.read
     CL_desc = str(CL_desc)
 
 
 setup(
     name='skyhawk',
-    version='0.0.2',
+    version='0.0.3',
     description='Skyhawk is a CLI tool that can run on any device with a camera to recognize faces. It built with open-cv & python',
     Long_description=RM_desc + '\n\n' + CL_desc,
     long_description_content_type="text/markdown",
