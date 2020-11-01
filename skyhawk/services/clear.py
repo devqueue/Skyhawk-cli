@@ -17,7 +17,7 @@ class Clear:
 
     
     def images(name):
-        IMAGE_DIR = r"skyhawk/facedata"
+        IMAGE_DIR = r"skyhawk/facedata/"
         path = IMAGE_DIR+name
 
         try:
