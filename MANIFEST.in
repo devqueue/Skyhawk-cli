@@ -2,5 +2,7 @@ include README.md
 include LICENSE
 include ChangeLog
 include requirements.txt
-include skyhawk/services *
+exclude .gitignore
+exclude install.sh
+exclude test/
 
