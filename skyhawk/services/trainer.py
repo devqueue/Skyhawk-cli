@@ -10,8 +10,7 @@ def Facetrainer():
 	'''Train skyhawk classifier on captured data'''
 	BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 	image_dir = os.path.join(BASE_DIR, "captured")
-	face_cascade = cv2.CascadeClassifier(
-		'skyhawk/services/Cascades/haarcascade_frontalface_default.xml')
+	face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades+'haarcascade_frontalface_default.xml')
 	recognizer = cv2.face.LBPHFaceRecognizer_create()
 	current_id = 0
 	label_ids = {}
