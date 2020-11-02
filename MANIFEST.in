@@ -1,0 +1,8 @@
+include README.md
+include LICENSE
+include ChangeLog.md
+include requirements.txt
+exclude .gitignore
+exclude install.sh
+exclude test/
+

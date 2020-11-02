@@ -9,9 +9,9 @@ import pickle
 def Facetrainer():
 	'''Train skyhawk classifier on captured data'''
 	BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-	image_dir = os.path.join(BASE_DIR, "captured")
-	face_cascade = cv2.CascadeClassifier(
-		'skyhawk/services/Cascades/haarcascade_frontalface_default.xml')
+	direc = "skyhawk/facedata"
+	image_dir = os.path.join(BASE_DIR, direc)
+	face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades+'haarcascade_frontalface_default.xml')
 	recognizer = cv2.face.LBPHFaceRecognizer_create()
 	current_id = 0
 	label_ids = {}
@@ -29,8 +29,6 @@ def Facetrainer():
 					current_id += 1
 				id_ = label_ids[label]
 				#print(label_ids)
-				#y_labels.append(label) # some number
-				#x_train.append(path) # verify this image, turn into a NUMPY arrray, GRAY
 				pil_image = Image.open(path).convert("L")  # grayscale
 				size = (200, 200)
 				final_image = pil_image.resize(size, Image.ANTIALIAS)
@@ -46,9 +44,9 @@ def Facetrainer():
 	#print(y_labels)
 	#print(x_train)
 
-	with open("skyhawk/services/pickles/face-labels.pickle", 'wb') as f:
+	with open("skyhawk/bin/face-labels.pickle", 'wb') as f:
 		pickle.dump(label_ids, f)
 
 	recognizer.train(x_train, np.array(y_labels))
-	recognizer.save("skyhawk/services/recognizer/face-trainner.yml")
+	recognizer.save("skyhawk/bin/face-trainner.yml")
 	print("Training completed")

@@ -1,12 +1,9 @@
 import click
-from skyhawk.services import detector
+from skyhawk.services import initialize
 
 
 @click.command()
 def cli():
     '''Start running skyhawk for face recognition'''
-    result = detector.run()
+    result = initialize.run()
     return result
-
-
-

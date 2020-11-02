@@ -6,14 +6,13 @@ from datetime import datetime
 
 
 def run():
-    face_cascade = cv2.CascadeClassifier(
-        'skyhawk/services/Cascades/haarcascade_frontalface_default.xml')
+    face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades+'haarcascade_frontalface_default.xml')
     recognizer = cv2.face.LBPHFaceRecognizer_create()
 
-    recognizer.read("skyhawk/services/recognizer/face-trainner.yml")
+    recognizer.read("skyhawk/bin/face-trainner.yml")
 
     def markattendance(name):
-        with open('skyhawk/services/Attendance.csv', 'r+') as f:
+        with open('skyhawk/bin/Attendance.csv', 'r+') as f:
             dataList = f.readlines()
             nameList = []
             for line in dataList:
@@ -27,7 +26,7 @@ def run():
                 f.writelines(f'\n{name}, {date}, {time}, {day}')
 
     labels = {"person_name": 1}
-    with open("skyhawk/services/pickles/face-labels.pickle", 'rb') as f:
+    with open("skyhawk/bin/face-labels.pickle", 'rb') as f:
         og_labels = pickle.load(f)
         labels = {v: k for k, v in og_labels.items()}
 
