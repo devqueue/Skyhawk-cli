@@ -8,7 +8,7 @@ def run():
     bin_path = os.path.join(current_dir,bin_dir)
     os.makedirs(face_path, exist_ok=True)
     os.makedirs(bin_path, exist_ok=True)
-    print("Data directories initialized")
     with open('skyhawk/bin/Attendance.csv', 'w') as file:
         HEADER = "Name, Date, Time, Day "
         file.write(HEADER)
+    print("Data directories initialized sucessfully")

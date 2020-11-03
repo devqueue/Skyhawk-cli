@@ -63,7 +63,7 @@ class Capture:
         print("\n[INFO] Exiting Program and cleanup stuff")
         cap.release()
         cv2.destroyAllWindows()
-        print("Dataset Collection Completed")
+        print("INFO] Dataset Collection Completed")
         
 
 
