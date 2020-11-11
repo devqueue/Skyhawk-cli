@@ -50,3 +50,7 @@ def Facetrainer():
 	recognizer.train(x_train, np.array(y_labels))
 	recognizer.save("skyhawk/bin/face-trainner.yml")
 	print("Training completed")
+
+
+if __name__ == "__main__":
+    Facetrainer()
