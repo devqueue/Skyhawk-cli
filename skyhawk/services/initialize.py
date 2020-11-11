@@ -12,7 +12,7 @@ def run():
         HEADER = "Name, Date, Time, Day "
         file.write(HEADER)
     print('\n')
-    print("                             Welcome to skyhawk      ")
+    print("             Welcome to skyhawk! Auto-attandance cli tool      ")
     print('''
                                                                                                         
                                    -://-`                                               
