@@ -1,4 +1,6 @@
 import os
+from skyhawk.misc.colors import COLORS,colorText
+
 
 def run():
     current_dir = os.getcwd()
@@ -11,9 +13,9 @@ def run():
     with open('skyhawk/bin/Attendance.csv', 'w') as file:
         HEADER = "Name, Date, Time, Day "
         file.write(HEADER)
-    print('\n')
-    print("             Welcome to skyhawk! Auto-attandance cli tool      ")
-    print('''
+    header = "[[green]]            Welcome to skyhawk! Auto-attandance cli tool      "
+    footer = "[[white]]Data directories initialized sucessfully"
+    Logo = '''[[cyan]]
                                                                                                         
                                    -://-`                                               
                                  /dNMMMNmo`                                             
@@ -36,5 +38,8 @@ def run():
                       `:o`    ./     :     :-    `+d`                                    
                                                                                                      
     '''
-    )
-    print("Data directories initialized sucessfully")
+    print('\n')
+    print(colorText(header))
+    print(colorText(Logo))
+    print(colorText(footer))
+    print('\n')
