@@ -19,3 +19,16 @@ def colorText(text):
     for color in COLORS:
         text = text.replace("[[" + color + "]]", COLORS[color])
     return text
+
+'''
+# Example printing out some text
+
+hello = "[[red]]hello [[blue]]world[[white]]"
+print(colorText(hello))
+
+# Example printing out an ASCII file
+
+f = open("pythonlogo2.txt", "r")
+ascii = "".join(f.readlines())
+print(colorText(ascii))
+'''
