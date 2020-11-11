@@ -11,27 +11,29 @@ def run():
     with open('skyhawk/bin/Attendance.csv', 'w') as file:
         HEADER = "Name, Date, Time, Day "
         file.write(HEADER)
+    print('\n')
+    print("                             Welcome to skyhawk      ")
     print('''
                                                                                                         
-                                               -://-`                                               
-                                             /dNMMMNmo`                                             
-                                            +MMMy+sNMMy                                             
-                                            hMMm`  yMMN`                                            
-                                  .--.`     :NMMmhdMMNo      .-:-`                                  
-                                :hNNNNd/     -sdMMMmy:     :hNNNNd+                                 
-                               -NMd::yMM:     .sNMMh-     .NMd:-yMM/                                
-                               -NMd::hMM:    :mMMMMMN+    .NMm::yMM/                                
-                        `.`     :hNNNMm/     :MMMMMMMo     :dMMNNd+     `..                         
-                      -ymdmh:    `.:mMNho.   `mMMMMMM-   `+ymMN+.`    .yddmh/                       
-                     `mMo-+MN.     yMMMMMy    sMMMMMd    +MMMMMd`     dMs-/NN-                      
-                      yMdohMd`     +NMMMMm    -MMMMM+    yMMMMMs`    `yMdoyMd`                      
-                      `:oysNmdh/    /NMMMM.    dMMMN.   `mMMMMs`   :hdmMyys/`                       
-                          .NMMMN/    /NMMM/    +MMMy    -MMMMo    -mMMMM/                           
-                          `/dMMMN/    :mMMy    .NMM:    +MMN+    -mMMMmo`                           
-                            `/dMMN:    -mMm`    hMm`    yMN/    .mMMm+.                             
-                              `/hNm-    -mM.    /Ms    `mN/    .dMd+`                               
-                                 :hd-    .d/    `m-    .m:    `hd/`                                 
-                                  `:o`    ./     :     :-    `+d`                                   
+                                   -://-`                                               
+                                 /dNMMMNmo`                                             
+                                +MMMy+sNMMy                                             
+                                hMMm`  yMMN`                                            
+                      .--.`     :NMMmhdMMNo      .-:-`                                  
+                    :hNNNNd/     -sdMMMmy:     :hNNNNd+                                 
+                   -NMd::yMM:     .sNMMh-     .NMd:-yMM/                                
+                   -NMd::hMM:    :mMMMMMN+    .NMm::yMM/                                
+            `.`     :hNNNMm/     :MMMMMMMo     :dMMNNd+     `..                         
+          -ymdmh:    `.:mMNho.   `mMMMMMM-   `+ymMN+.`    .yddmh/                       
+         `mMo-+MN.     yMMMMMy    sMMMMMd    +MMMMMd`     dMs-/NN-                      
+          yMdohMd`     +NMMMMm    -MMMMM+    yMMMMMs`    `yMdoyMd`                      
+          `:oysNmdh/    /NMMMM.    dMMMN.   `mMMMMs`   :hdmMyys/`                       
+              .NMMMN/    /NMMM/    +MMMy    -MMMMo    -mMMMM/                           
+              `/dMMMN/    :mMMy    .NMM:    +MMN+    -mMMMmo`                           
+                `/dMMN:    -mMm`    hMm`    yMN/    .mMMm+.                             
+                  `/hNm-    -mM.    /Ms    `mN/    .dMd+`                               
+                     :hd-    .d/    `m-    .m:    `hd/`                                 
+                      `:o`    ./     :     :-    `+d`                                    
                                                                                                      
     '''
     )
