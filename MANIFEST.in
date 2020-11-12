@@ -1,6 +1,7 @@
 include README.md
 include LICENSE
 include ChangeLog.md
+include logo.txt
 include requirements.txt
 exclude .gitignore
 exclude install.sh
