@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.0.5] - 2020-09-01 [BETA]
 ### Added
--Skyhawk logo added
+-Skyhawk logo added on initialization
 
 
 ## [0.0.4] - 2020-09-01 [BETA]
