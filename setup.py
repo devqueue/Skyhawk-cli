@@ -18,22 +18,22 @@ classifiers = [
     'Programming Language :: Python :: 3.7'
 ]
 
-def readme():
+def Longdesc():
     with open('README.md') as rm:
         RM_desc = rm.read()
         RM_desc = str(RM_desc)
+    
 
-def changelog():
     with open('ChangeLog.md') as cl:
         CL_desc = cl.read
         CL_desc = str(CL_desc)
-
+    return CL_desc + '\n\n' + RM_desc
 
 setup(
     name='skyhawk',
     version='0.0.5',
     description='Skyhawk is a CLI tool that can run on any device with a camera to recognize faces. It built with open-cv & python',
-    Long_description=open('README.md').read() + '\n\n' + open('ChangeLog.md').read(),
+    Long_description=Longdesc(),
     long_description_content_type="text/markdown",
     url='https://github.com/devqueue/Skyhawk-cli.git',
     author='Haziq Sayyed',
