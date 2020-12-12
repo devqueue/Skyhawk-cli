@@ -33,7 +33,7 @@ setup(
     name='skyhawk',
     version='0.0.5',
     description='Skyhawk is a CLI tool that can run on any device with a camera to recognize faces. It built with open-cv & python',
-    Long_description=Longdesc(),
+    long_description=Longdesc(),
     long_description_content_type="text/markdown",
     url='https://github.com/devqueue/Skyhawk-cli.git',
     author='Haziq Sayyed',
