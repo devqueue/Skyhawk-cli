@@ -9,7 +9,7 @@ import pickle
 def Facetrainer():
 	'''Train skyhawk classifier on captured data'''
 	BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-	direc = "skyhawk/facedata"
+	direc = "../facedata"
 	image_dir = os.path.join(BASE_DIR, direc)
 	face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades+'haarcascade_frontalface_default.xml')
 	recognizer = cv2.face.LBPHFaceRecognizer_create()
@@ -51,6 +51,8 @@ def Facetrainer():
 	recognizer.save("skyhawk/bin/face-trainner.yml")
 	print("Training completed")
 
+def Facerunnner():
+	os.system('python "skyhawk/bin/trainer.py"')
 
 if __name__ == "__main__":
     Facetrainer()
