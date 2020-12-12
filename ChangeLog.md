@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.7] - 2020-09-01 [BETA]
+### Added
+-Long Description fixed
+
+## [0.0.6] - 2020-09-01 [BETA]
+### Added
+-Long Description added
+
 ## [0.0.5] - 2020-09-01 [BETA]
 ### Added
 -Skyhawk logo added on initialization
