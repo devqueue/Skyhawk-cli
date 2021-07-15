@@ -12,7 +12,7 @@ class Clear:
                 HEADER = "Name, Date, Time, Day "
                 file.write(HEADER)
         except FileNotFoundError as e:
-            print("Error: %s : %s" % (path, e.strerror))
+            print("Error: {e.strerror}")
             print("Make sure to run 'skyhawk init' before clearing a file")
 
     

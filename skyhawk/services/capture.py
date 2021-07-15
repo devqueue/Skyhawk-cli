@@ -28,7 +28,7 @@ class Capture:
             gray = frame
             faces = face_cascade.detectMultiScale(gray, scaleFactor=1.5, minNeighbors=5)
 
-            if faces is():
+            if faces:
                 return None
 
             for(x, y, w, h) in faces:
@@ -88,7 +88,7 @@ class Capture:
             gray = frame
             faces = face_cascade.detectMultiScale(gray, scaleFactor=1.5, minNeighbors=5)
 
-            if faces is():
+            if faces:
                 return None
 
             for(x, y, w, h) in faces:
