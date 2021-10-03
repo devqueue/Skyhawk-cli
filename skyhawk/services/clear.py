@@ -12,18 +12,18 @@ class Clear:
                 HEADER = "Name, Date, Time, Day "
                 file.write(HEADER)
         except FileNotFoundError as e:
-            print("Error: %s : %s" % (path, e.strerror))
+            print("Error: %s : %s" % (e.strerror))
             print("Make sure to run 'skyhawk init' before clearing a file")
 
     
     def images(name):
         IMAGE_DIR = r"skyhawk/facedata/"
-        path = IMAGE_DIR+name
+        path = IMAGE_DIR
 
         try:
             shutil.rmtree(path)
-            print(f"{name} user data deleted")
-            print("Make sure to run 'skyhawk train' to permanently remove user data")
+            print(f"User data deleted")
         except OSError as e:
             print("Error: %s : %s" % (path, e.strerror))
+            print("Enter the name of the user to clear data")
             
