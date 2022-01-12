@@ -8,6 +8,32 @@ My mum being a teacher at my school I noticed she had to wait in a queue in the 
 
 #### Video Demo: https://youtu.be/1gWSH6qF8_s
 
+### Installing the App:
+
+#### 1. Using the repo:
+   Follow the given steps to test the code:
+    1. `git clone https://github.com/devqueue/Skyhawk-cli.git`
+    2. `cd Skyhawk-cli`
+    3. `pip install -r requirements.txt`
+    4. `pip install -e . `
+
+#### 2. Using pip:
+
+   `pip install skyhawk`
+
+### Testing the code:
+You can initialize and register users and capture their faces.
+Make sure to  hold the camera in front of your face in a good lighting condition.
+1. `skyhawk init`
+2. `skyhwak capture black` or `skyhawk capture color`
+you will be prompted to enter your name and the number of images. I recommend 20-30 images both grey scale and color.
+Once you have all the users registered you ca train the recognizer model.
+3. `skyhawk train`
+Now run the application.
+4. `skyhawk run`
+Now place a camera in at the entrance of the office or classroom
+and let the registered folks walk past it. You can now view their attendance using the following command.
+5. `skyhawk view attandance`
 
 ### Face Detection and Face Recognition:
 The tool uses OpenCV at its core for recognition.
@@ -107,33 +133,6 @@ Based on the image above, we can extract the histogram of each region as follows
 -   So the algorithm output is the ID from the image with the closest histogram. The algorithm should also return the calculated distance, which can be used as a ‘confidence’ measurement. Note: don’t be fooled about the ‘confidence’ name, as lower confidences are better because it means the distance between the two histograms is closer.
 
 -   We can then use a threshold and the ‘confidence’ to automatically estimate if the algorithm has correctly recognized the image. We can assume that the algorithm has successfully recognized if the confidence is lower than the threshold defined.
-
-### Installing the App:
-
-#### 1. Using the repo:
-   Follow the given steps to test the code:
-    1. `git clone https://github.com/devqueue/Skyhawk-cli.git`
-    2. `cd Skyhawk-cli`
-    3. `pip install -r requirements.txt`
-    4. `pip install -e . `
-
-#### 2. Using pip:
-
-   `pip install skyhawk`
-
-### Testing the code:
-You can initialize and register users and capture their faces.
-Make sure to  hold the camera in front of your face in a good lighting condition.
-1. `skyhawk init`
-2. `skyhwak capture black` or `skyhawk capture color`
-you will be prompted to enter your name and the number of images. I recommend 20-30 images both grey scale and color.
-Once you have all the users registered you ca train the recognizer model.
-3. `skyhawk train`
-Now run the application.
-4. `skyhawk run`
-Now place a camera in at the entrance of the office or classroom
-and let the registered folks walk past it. You can now view their attendance using the following command.
-5. `skyhawk view attandance`
 
 
 
